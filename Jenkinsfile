@@ -88,6 +88,11 @@ pipeline {
                }
             }
         }
+        stage('Deploy board game') {
+            steps {
+                sh 'docker run -d --rm -p 8081:8080 aashishanil/boardshack'
+            }
+        }
       
     }
 }
