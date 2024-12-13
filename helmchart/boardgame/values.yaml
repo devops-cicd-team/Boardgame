@@ -2,7 +2,7 @@ namespace: test
 replicaCount: 1
 
 image:
-  repository: "misbahashim/bgame"
+  repository: "misbahashim/bgame" #MISBA DOCKER HUB
   tag: "latest"
   pullPolicy: Always
 
