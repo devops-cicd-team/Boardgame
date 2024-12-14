@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CI Github Container Registry
 
 on:
     push:
@@ -33,5 +33,5 @@ jobs:
 
             - name: "Build Inventory Image"
               run: |
-                  docker build . --tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-                  docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+                  docker build . --tag ${{ env.REGISTRY }}/bsoft-devops/boardgame:latest
+                  docker push ${{ env.REGISTRY }}/bsoft-devops/boardgame:latest
