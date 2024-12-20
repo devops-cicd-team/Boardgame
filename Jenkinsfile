@@ -14,7 +14,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/bsoft-devops/Boardgame.git'
+               git branch: 'main', url: 'https://github.com/devops-cicd-team/Boardgame.git'
             }
         }
         
